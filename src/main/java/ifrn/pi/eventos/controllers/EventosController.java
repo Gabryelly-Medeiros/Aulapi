@@ -23,6 +23,6 @@ public class EventosController {
 		
 		System.out.println(evento);
 		er.save(evento);
-		return "EventoAdicionado";
+		return "EventosAdicionado";
 	}
 }

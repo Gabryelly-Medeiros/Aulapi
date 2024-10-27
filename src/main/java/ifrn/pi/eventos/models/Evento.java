@@ -15,7 +15,6 @@ public class Evento {
 	private String local;
 	private String data;
 	private String horario;
-	
 	public Long getId() {
 		return id;
 	}

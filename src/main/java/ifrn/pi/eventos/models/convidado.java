@@ -13,6 +13,10 @@ public class convidado {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nome;
+	private String rg;
+
+	@ManyToOne
+	private Evento evento;
 	public Long getId() {
 		return id;
 	}
@@ -44,11 +48,6 @@ public class convidado {
 	public void setEvento(Evento evento) {
 		this.evento = evento;
 	}
-
-	private String rg;
-
-	@ManyToOne
-	private Evento evento;
 
 	@Override
 	public String toString() {
